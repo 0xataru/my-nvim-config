@@ -1,8 +1,8 @@
 # Some dependencies needed
 
-<a href="https://dotfyle.com/0xataru/my-nvim-config"><img src="https://dotfyle.com/0xataru/my-nvim-config/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/0xataru/my-nvim-config"><img src="https://dotfyle.com/0xataru/my-nvim-config/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/0xataru/my-nvim-config"><img src="https://dotfyle.com/0xataru/my-nvim-config/badges/plugin-manager?style=flat" /></a>
+![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
+![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ⠀⠀⠀⠀⠀⢄⣤⠟⠉⠁⠉⠳⣄⣤⣖⣒⠒⣒⣀⣀⣀⣀⣀⣀⣤⠤⢤⣶⠲⠤⢤⣤⣲⡀⠀⠀⠀⠐⢁⡤⠖⠒⠒⣀⡴⠂⠀⣾⣿⣿
 ⠀⠀⣠⠖⠻⠋⢻⡛⠒⠒⠒⠊⢉⣀⡤⠜⠛⠁⢀⣩⢥⣤⠚⠉⠁⠀⠀⠙⢄⠀⠀⠈⠉⠻⢤⣄⢀⣠⠏⣠⠴⣾⠯⣍⠀⠀⠀⠀⠈⠉
