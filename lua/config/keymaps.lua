@@ -48,8 +48,8 @@ vim.keymap.set("x", "<C-j>", ":move '>+1<CR>gv=gv", { noremap = true, silent = t
 vim.keymap.set("x", "<C-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
 
 -- Move to start/end of line by H and L
-vim.keymap.set({ "n", "x", "o" }, "H", "^", { noremap = true, silent = true })
-vim.keymap.set({ "n", "x", "o" }, "L", "g_", { noremap = true, silent = true })
+vim.keymap.set({ "n", "x", "o" }, "<C-h>", "^", { noremap = true, silent = true })
+vim.keymap.set({ "n", "x", "o" }, "<C-l>", "g_", { noremap = true, silent = true })
 
 -- Duplicate lines
 vim.keymap.set("v", "<D-C-k>", "y`>p`<", { silent = true })
