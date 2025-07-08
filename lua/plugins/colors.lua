@@ -1,9 +1,13 @@
 return {
   {
-    "projekt0n/github-nvim-theme",
+    -- "projekt0n/github-nvim-theme",
+    "sainnhe/gruvbox-material",
+    -- "catppuccin/nvim",
     priority = 1000,
     config = function()
-      vim.cmd("colorscheme github_dark_default")
+      -- vim.cmd("colorscheme github_dark_default")
+      vim.cmd("colorscheme gruvbox-material")
+      -- vim.cmd("colorscheme catppuccin-macchiato")
 
       -- transparent background
       vim.cmd([[

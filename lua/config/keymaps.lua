@@ -10,8 +10,10 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
--- use jk to exit insert mode
+-- use jj or jk to exit insert mode
 keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
 keymap.set("n", "<leader>q", ":qall<CR>", { desc = "Exit Vim" })
 keymap.set("i", "<D-s>", "<ESC>:w<CR>", { desc = "Save file in insert mode" })
 keymap.set("v", "<D-s>", "<ESC>:w<CR>", { desc = "Save file in visual mode" })
@@ -39,17 +41,21 @@ keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>", { desc = "Go to previous ta
 
 -- move lines up and down
 -- normal mode
-vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { noremap = true, silent = true })
-vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-j>", ":m .+1<CR>==", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-k>", ":m .-2<CR>==", { noremap = true, silent = true })
 -- visual mode
-vim.keymap.set("x", "<A-j>", ":move '>+1<CR>gv=gv", { noremap = true, silent = true })
-vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set("x", "<C-j>", ":move '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set("x", "<C-k>", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
+
+-- Move to start/end of line by H and L
+vim.keymap.set({ "n", "x", "o" }, "H", "^", { noremap = true, silent = true })
+vim.keymap.set({ "n", "x", "o" }, "L", "g_", { noremap = true, silent = true })
 
 -- Duplicate lines
-vim.keymap.set("v", "<D-C-Up>", "y`>p`<", { silent = true })
-vim.keymap.set("n", "<D-C-Up>", "Vy`>p`<", { silent = true })
-vim.keymap.set("v", "<D-C-Down>", "y`<kp`>", { silent = true })
-vim.keymap.set("n", "<D-C-Down>", "Vy`<p`>", { silent = true })
+vim.keymap.set("v", "<D-C-k>", "y`>p`<", { silent = true })
+vim.keymap.set("n", "<D-C-k>", "Vy`>p`<", { silent = true })
+vim.keymap.set("v", "<D-C-j>", "y`<kp`>", { silent = true })
+vim.keymap.set("n", "<D-C-j>", "Vy`<p`>", { silent = true })
 
 -- delete a word by alt+backspace
 vim.keymap.set({ "i", "c" }, "<A-BS>", "<C-w>", { noremap = true })
