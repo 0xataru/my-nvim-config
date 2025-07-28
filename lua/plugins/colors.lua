@@ -6,7 +6,7 @@ return {
     priority = 1000,
     config = function()
       -- vim.cmd("colorscheme github_dark_default")
-      vim.cmd("colorscheme gruvbox-material")
+      -- vim.cmd("colorscheme gruvbox-material")
       -- vim.cmd("colorscheme catppuccin-macchiato")
 
       -- transparent background
