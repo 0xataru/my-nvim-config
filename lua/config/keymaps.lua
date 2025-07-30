@@ -7,8 +7,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
 
----------------------
--- General Keymaps -------------------
+-------------------- General Keymaps --------------------
 
 -- use jj or jk to exit insert mode
 keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jk" })
@@ -56,10 +55,6 @@ vim.keymap.set("v", "<D-C-k>", "y`>p`<", { silent = true })
 vim.keymap.set("n", "<D-C-k>", "Vy`>p`<", { silent = true })
 vim.keymap.set("v", "<D-C-j>", "y`<kp`>", { silent = true })
 vim.keymap.set("n", "<D-C-j>", "Vy`<p`>", { silent = true })
-
--- delete a word by alt+backspace
-vim.keymap.set({ "i", "c" }, "<A-BS>", "<C-w>", { noremap = true })
-vim.keymap.set("n", "<A-BS>", "db", { noremap = true })
 
 -- clear line with cd
 vim.keymap.set("n", "cd", "0D", {})

@@ -1,13 +1,28 @@
 return {
   {
     -- "projekt0n/github-nvim-theme",
-    "sainnhe/gruvbox-material",
+    -- "sainnhe/gruvbox-material",
     -- "catppuccin/nvim",
+    -- "rebelot/kanagawa.nvim",
+    "EdenEast/nightfox.nvim",
+    -- "rose-pine/neovim",
+    -- "olimorris/onedarkpro.nvim",
+    -- "navarasu/onedark.nvim",
+    -- "tiagovla/tokyodark.nvim",
+    -- "Mofiqul/vscode.nvim",
+    -- "folke/tokyonight.nvim",
     priority = 1000,
     config = function()
       -- vim.cmd("colorscheme github_dark_default")
       -- vim.cmd("colorscheme gruvbox-material")
       -- vim.cmd("colorscheme catppuccin-macchiato")
+      -- vim.cmd("colorscheme tokyonight-night")
+      -- vim.cmd("colorscheme kanagawa")
+      vim.cmd("colorscheme carbonfox")
+      -- vim.cmd("colorscheme rose-pine")
+      -- vim.cmd("colorscheme onedark")
+      -- vim.cmd("colorscheme tokyodark")
+      -- vim.cmd("colorscheme vscode")
 
       -- transparent background
       vim.cmd([[
