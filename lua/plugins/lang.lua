@@ -25,7 +25,7 @@ return {
         -- Rust tools
         "rust-analyzer",
         "codelldb",
-        
+
         -- Go tools
         "gopls",
         "goimports",
@@ -34,7 +34,7 @@ return {
         "gomodifytags",
         "impl",
         "delve",
-        
+
         -- General tools
         "stylua",
         "shellcheck",
@@ -106,6 +106,14 @@ return {
           end,
           default_settings = {
             ["rust-analyzer"] = {
+              procMacro = {
+                enable = true,
+                -- ignored = {
+                --   ["async-trait"] = { "async_trait" },
+                --   ["napi-derive"] = { "napi" },
+                --   ["async-recursion"] = { "async_recursion" },
+                -- },
+              },
               cargo = {
                 allFeatures = true,
                 loadOutDirsFromCheck = true,
@@ -117,14 +125,14 @@ return {
                 command = "clippy",
                 extraArgs = { "--no-deps" },
               },
-              procMacro = {
-                enable = true,
-                ignored = {
-                  ["async-trait"] = { "async_trait" },
-                  ["napi-derive"] = { "napi" },
-                  ["async-recursion"] = { "async_recursion" },
-                },
-              },
+              -- procMacro = {
+              --   enable = true,
+              --   ignored = {
+              --     ["async-trait"] = { "async_trait" },
+              --     ["napi-derive"] = { "napi" },
+              --     ["async-recursion"] = { "async_recursion" },
+              --   },
+              -- },
             },
           },
         },
@@ -143,7 +151,7 @@ return {
   --       dap_debug_gui = false,
   --       dap_debug_keymap = false,
   --       dap_debug_vt = false,
-  --       
+  --
   --       -- Go tools options
   --       goimports = "gopls",
   --       gofmt = "golines", -- Use golines for line length control
@@ -226,4 +234,4 @@ return {
   --   ft = { "go", "gomod" },
   --   build = ':lua require("go.install").update_all_sync()',
   -- },
-} 
+}
