@@ -33,6 +33,7 @@
 - [NeoVim](https://neovim.io/)
 - [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
 - [LazyGit](https://github.com/jesseduffield/lazygit)
 - [Node.js](https://nodejs.org/en/)
 

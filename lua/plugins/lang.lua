@@ -19,7 +19,7 @@ return {
 
   -- Mason configuration for Rust and Go tools
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         -- Rust tools

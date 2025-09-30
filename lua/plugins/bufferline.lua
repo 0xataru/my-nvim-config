@@ -36,7 +36,13 @@ return {
               highlight = { gui = "bold", guisp = "blue" },
               auto_close = false,
               matcher = function(buf)
-                return buf.name:match("%_test") or buf.name:match("%_spec")
+                return buf.name:match("%_test")
+                  or buf.name:match("%_spec")
+                  or buf.name:match("%-test")
+                  or buf.name:match("%-tests")
+                  or buf.name:match("%.spec")
+                  or buf.name:match("test%.")
+                  or buf.name:match("spec%.")
               end,
             },
             {
@@ -45,6 +51,22 @@ return {
               auto_close = true,
               matcher = function(buf)
                 return buf.name:match("%.md") or buf.name:match("%.txt")
+              end,
+            },
+            {
+              name = "🦀 Rust",
+              highlight = { gui = "bold", guisp = "orange" },
+              auto_close = false,
+              matcher = function(buf)
+                return buf.name:match("%.rs$")
+              end,
+            },
+            {
+              name = "🐹 Go",
+              highlight = { gui = "bold", guisp = "cyan" },
+              auto_close = false,
+              matcher = function(buf)
+                return buf.name:match("%.go$")
               end,
             },
             {
