@@ -37,3 +37,19 @@
 - [LazyGit](https://github.com/jesseduffield/lazygit)
 - [Node.js](https://nodejs.org/en/)
 
+## Installation
+
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.cache/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+```
+
+```bash
+git clone https://github.com/0xataru/my-nvim-config ~/.config/nvim
+```
+
+```bash
+rm -rf ~/.config/nvim/.git
+```
